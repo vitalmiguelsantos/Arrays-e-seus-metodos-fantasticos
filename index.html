@@ -1,35 +1,154 @@
 <html>
-
 <head>
     <title>Home page</title>
     <link href="estilos.css" rel="stylesheet">
 </head>
-
 <body>
-    <font face="Verdana"><h1 align="center">Bem-vindo à resolução da lista de exercícios!</h1></font>
-    <p align="center"><img src="https://user-images.githubusercontent.com/99989600/167193928-63fff6e8-e03b-45f9-b38f-8ac8e903f1eb.png"></p>
+    <font face="Verdana">
+        <h1 align="center">Bem-vindo à resolução da lista de exercícios!</h1>
+    </font>
+    <p align="center"><img
+        src="https://user-images.githubusercontent.com/99989600/167193928-63fff6e8-e03b-45f9-b38f-8ac8e903f1eb.png">
+    </p>
+    <script>
+        var numeros = [];
+        var count = 0;
+        while (count < 20) {
+            var numeral = parseInt(prompt('Informe numero para primeiro exercício: '));
+            numeros.push(numeral);
+            count++;
+        }
+    </script>
+    <h1 align="center">Exercício proposto</h1>
+    <p align="center">1. Faça um algoritmo para ler 20 números e armazenar em um array. Após a leitura total dos 20
+        números, o algoritmo deve escrever esse array.</p>
+    <p align="center">Resposta do código:</p>
     <p align="center">
-    <div class="menu">
+        <script>document.write('Os números são: ' + numeros);</script>
+    </p>
+    <p align="center">
+        <hr>
+        <script>
+            var count = 0;
+            var maior = [];
+            var menor = [];
+            while (count < 12) {
+                var numeros = parseInt(prompt('Informe o número para segundo exercício: '));
+                if (numeros > 50) {
+                    maior.push(numeros);
+                    count++;
+                } else {
+                    menor.push(numeros);
+                    count++;
+                }
+            }
+        </script>
+    <p align="center">2. Faça um algoritmo para ler 12 números e armazenar em dois arrays: um com os números acima de
+        50. Outro com números abaixo de 50.</p>
+    <p align="center">Resposta do código:</p>
+    <p align="center">
+        <script>document.write('Os maiores que 50 são: <br>' + maior + '<br> Os menores que 50 são: <br>' + menor);</script>
+    </p>
+    <hr>
+    <script>
+        var inventarioDrofo = ['Anel da invisibilidade', 'par de botas magicas 1', 'par de botas magicas 2', 'pocao do sono', 'pocao da inocencia 1', 'pocao da inocencia 2'];
+        var inventarioTorper = ['capa da invisibilidade', 'pedra do despertar', 'varinha das varinhas', 'pocao da inocencia', 'pocao da mentira 1', 'pocao da mentira 2', 'pocao anti-inteligencia'];
+        inventarioTorper.splice(4, 1); // Torper usou uma pocao da mentira;
+        inventarioTorper.splice(1, 1); // Torper perde a pedra do despertar;
+        inventarioTorper.push(inventarioDrofo[1]); // Torper recebe par de botas de Drofo;
+        inventarioTorper.push('escudo magico'); // Torper Achou um escudo mágico;
+        inventarioTorper.push('Espada magica'); // Torper Achou espada mágica;
+        inventarioDrofo.push('bota magica 1'); // Drofo Ganhou bota magica;
+        inventarioDrofo.splice(3, 1); // Drofo Usou uma pocao do sono;
+        inventarioTorper.splice(6, 1); // Drofo Consumiu pocao anti-inteligencia do Torper;
+        inventarioDrofo.push('Ovo de dragao'); // Drofo encontrou ovo de dragao;
+        inventarioDrofo.push('Coxinha'); // Drofo encontrou uma coxinha;
+    </script>
+    <p align="center">3. Drofo e Topper estão em uma aventura mágica. Faça um programa que contenha um inventário para
+        cada um dos dois aventureiros - esse inventário será um array.
+        Drofo terá um anel da invisibilidade, dois pares de botas mágicas, uma poção do sono e duas poções da inocência
+        em seu inventário e nessa ordem.<br>
+        Torper terá uma capa da invisibilidade, uma pedra do despertar, uma varinha das varinhas, uma poção da inocência
+        e duas poções da mentira, poção anti-inteligência e nessa ordem.</p>
+    <p align="center">No meio de sua jornada, Torper consumiu uma das poções da mentira, perdeu sua pedra e ganhou um par
+        de botar mágicas do Drofo, achou um escudo mágico e uma espada mágica.
+        Descreva cada uma das ações acima. utilizando código (utilize comentários para ficar mais claro).</p>
+    <p align="center">No meio da sua jornada, Drofo, ganhou mais uma bota mágica, usou sua poção do sono e consumiu a
+        poção anti-inteligência do Torper, encontrou um ovo de dragão e uma coxinha.<br>
+        Descreva cada uma das ações acima. utilizando código.</p>
+    <p align="center">Exiba o resultado final de cada um dos inventários utilizando "document.write"</p>
+    <p align="center"><br>Resposta do código:</p>
+    <p align="center">Inventário do Drofo:<br></p>
+    <p align="center">
+        <script>
+            document.write(inventarioDrofo + '<br>');
+        </script>
+    </p>
+    <p align="center">Inventário do Torper:<br></p>
+    <p align="center">
+        <script>
+            document.write(inventarioTorper);
+        </script>
+    </p>
+    <hr>
+    <h2 align="center" , align="top">Machado de Assis!</h2>
+    <p align="center">Foi um escritor brasileiro, considerado por muitos críticos, estudiosos, escritores e leitores o
+        maior nome da literatura brasileira.</p>
+    <p align="center">A sua lista de obras:</p>
+    <div class="geral_list">
         <ul>
-            <li><a href="https://github.com/vitalmiguelsantos/Arrays-e-seus-metodos-fantasticos/blob/main/Exercício%201.html"><button
-                        style="background: #6B2120; border-radius: 6px; padding: 15px; cursor: pointer; color: #fff; border: none; font-size: 16px;">exercício
-                        1</button></a></li>
-            <li><a
-                    href="file:///C:/Users/Aluno%20PROA/Documents/GitHub/Arrays-e-seus-metodos-fantasticos/Exerc%C3%ADcio%202.html"><button
-                        style="background: #BA0300; border-radius: 6px; padding: 15px; cursor: pointer; color: #fff; border: none; font-size: 16px;">exercício
-                        2</button></a></li>
-            <li><a
-                    href="file:///C:/Users/Aluno%20PROA/Documents/GitHub/Arrays-e-seus-metodos-fantasticos/Exerc%C3%ADcio%203.html"><button
-                        style="background: #EB0400; border-radius: 6px; padding: 15px; cursor: pointer; color: #fff; border: none; font-size: 16px;">exercício
-                        3</button></a></li>
-            <li><a
-                    href="file:///C:/Users/Aluno%20PROA/Documents/GitHub/Arrays-e-seus-metodos-fantasticos/Exerc%C3%ADcio%204.html"><button
-                        style="background: #EE4A47; border-radius: 6px; padding: 15px; cursor: pointer; color: #fff; border: none; font-size: 16px;">exercício
-                        4</button></a></li>
+            <div class="list1">
+                <li>Romances: <ul>
+                        <li>Memorial de Aires (1908)</li>
+                        <li>Ressurreição (1872)</li>
+                        <li>Casa Velha (1885)</li>
+                        <li>Memórias Póstumas de Brás Cubas (1881)</li>
+                        <li>Helena (1876)</li>
+                        <li>Quincas Borba (1891)</li>
+                        <li>Esaú e Jacó (1904)</li>
+                        <li>A mão e a luva (1874)</li>
+                        <li>Dom Casmurro (1899)</li>
+                        <li>Iaiá Garcia (1878)</li>
+                    </ul>
+            </div>
+            </li>
+            <div class="list2">
+                <li>Coletânea de Poesias: <ul>
+                        <li>Americanas (1875)</li>
+                        <li>Ocidentais (1880)</li>
+                        <li>Falenas (1870)
+                        <li>Crisálidas (1864)</li>
+                        <li>Poesias Completas (1901)</li>
+                    </ul>
+                </li>
+            </div>
+            <div class="list3">
+                <li>Coletânea de contos: <ul>
+                        <li>Várias Histórias (1896)</li>
+                        <li>Histórias sem Data (1884)</li>
+                        <li>Papéis Avulsos (1882)</li>
+                        <li>Contos Fluminenses (1870)</li>
+                        <li>Histórias da Meia-Noite (1873)</li>
+                        <li>Relíquias de Casa Velha (1906)</li>
+                        <li>Páginas Recolhidas (1899)</li>
+                    </ul>
+                </li>
+            </div>
         </ul>
     </div>
+    <p align="center">Para cada um dos grupos de obras acima, ordene e crie um array com as obras.</p>
+
+    <p align="center">Agora, ainda utilizando código, crie mais um array e insira os três primeiros livros de cada grupo
+        de obras.</p>
+    <p align="center">Retorno do Código: <br></p>
+    <p align="center">
+        <script>
+            var romances = ['Memorial de Aires (1908)', 'Ressurreição (1872)', 'Casa Velha (1885)', 'Memórias Póstumas de Brás Cubas (1881)', 'Helena (1876)', 'Quincas Borba (1891)', 'Esaú e Jacó (1904)', 'A mão e a luva (1874)', 'Dom Casmurro (1899)', 'Iaiá Garcia (1878)'];
+            var poesias = ['Americanas (1875)', 'Ocidentais (1880)', 'Falenas (1870)', 'Crisálidas (1864)', 'Poesias Completas (1901)'];
+            var contos = ['Várias Histórias (1896)', 'Histórias sem Data (1884)', 'Papéis Avulsos (1882)', 'Contos Fluminenses (1870)', 'Histórias da Meia-Noite (1873)', 'Relíquias de Casa Velha (1906)', 'Páginas Recolhidas (1899)'];
+            var firstitem = [romances[0], poesias[0], contos[0]];
+            document.write(firstitem);
+        </script>
     </p>
-
 </body>
-
 </html>
