@@ -1,0 +1,21 @@
+.menu ul {
+    display: flex;
+    justify-content: center;
+}
+.menu ul li {
+    list-style-type: none;
+    padding-right: 10px;
+}
+.geral_list ul {
+    display: flex;
+    justify-content: center;
+}
+.list1 ul{
+    display: table;
+}
+.list2 ul{
+    display: table;
+}
+.list3 ul{
+    display: table;
+}
